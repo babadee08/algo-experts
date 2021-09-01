@@ -10,3 +10,14 @@ function nonConstructibleChange(coins) {
     }
     return change + 1;
   }
+
+function LargestFour(arr) { 
+    arr.sort((a, b) => b - a);
+
+    let total = 0
+    for (let idx = 0; idx < 4; idx++) {
+        total += arr[idx]        
+    }
+    // code goes here  
+    return total;  
+}
